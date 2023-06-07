@@ -33,10 +33,9 @@ button.addEventListener('click', function () {
 
     // Create array with all cells
     const cells = document.querySelectorAll('.cell');
-    console.log(cells);
 
     // Click on selected cell
-    for (let i = 1; i < difficulty; i++) {
+    for (let i = 0; i < difficulty; i++) {
 
         const currentCell = cells[i];
 
