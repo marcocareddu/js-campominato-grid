@@ -40,8 +40,14 @@ button.addEventListener('click', function () {
         const currentCell = cells[i];
 
         currentCell.addEventListener('click', function () {
+
             selectedCell = currentCell.dataset.cell;
-            console.log(selectedCell)
+
+            // Add class selected on cell
+            currentCell.classList.toggle('active');
+
+            // Print selected cell number on console 
+            console.log(selectedCell);
         }
         )
     }
