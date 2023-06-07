@@ -36,8 +36,9 @@ main {
 }
 
 .cell {
-    border: 2px solid #122731;
-    border-radius: 10px;
+    border: 3px solid #122731;
+    border-radius: 8px;
+    box-shadow: inset 3px 0px 5px 3px rgba(0, 0, 0, 0.5);
     color: #fff;
     font-weight: 600;
     display: flex;
