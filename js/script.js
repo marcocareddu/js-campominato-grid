@@ -15,11 +15,18 @@ function createCell(numero) {
 
 //? *********************************************************
 
-
 // Link DOM elements
+const grid = document.querySelector('.grid');
+const selectElement = document.getElementById('difficulty');
+const button = document.querySelector('button');
 
-// Create Variables
+// Button click - Create Variables 
+button.addEventListener('click', function () {
+    const difficulty = parseInt(selectElement.value);
+    console.log(difficulty);
+}
 
+)
 
 
 
