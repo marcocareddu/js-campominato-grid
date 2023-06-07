@@ -37,6 +37,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .cell-100 {
@@ -54,7 +55,7 @@ main {
     width: calc(100% / 7);
 }
 
-.selected {
+.active {
     background-color: lightskyblue;
 }
 
