@@ -31,22 +31,27 @@ main {
     width: 500px;
 }
 
+.cell {
+    border: 2px solid gold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cell-100 {
     height: calc(100% / 10);
     width: calc(100% / 10);
-    border: 2px solid gold;
 }
 
 .cell-81 {
     height: calc(100% / 9);
     width: calc(100% / 9);
-    border: 2px solid gold;
 }
 
 .cell-49 {
     height: calc(100% / 7);
     width: calc(100% / 7);
-    border: 2px solid gold;
 }
 
 .selected {
