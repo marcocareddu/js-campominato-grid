@@ -11,7 +11,7 @@ header {
     background-color: #fff;
 }
 
-img {
+header img {
     height: 60px;
 }
 
@@ -25,6 +25,7 @@ main {
 
 .grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     height: 500px;
@@ -64,6 +65,14 @@ main {
 
 .active {
     background-color: lightskyblue;
+}
+
+/* ERROR MESSAGE */
+
+.img-error {
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
 }
 
 

@@ -24,34 +24,44 @@ const button = document.querySelector('button');
 // * PHASE 2
 // Button click - Create Variables 
 button.addEventListener('click', function () {
+
+    grid.innerHTML = '';
+
     const difficulty = parseInt(selectElement.value);
     let selectedCell = '';
     console.log(difficulty);
 
-    // Inject string in DOM
-    grid.innerHTML = createCell(difficulty);
+    // ! Validation ********
+    if (difficulty !== 100 && difficulty !== 81 && difficulty !== 49) {
 
-    // Create array with all cells
-    const cells = document.querySelectorAll('.cell');
+        console.log('Seleziona una difficoltà dal menù!');
+        grid.innerHTML = '<img class="img-error" src="./img/hackerman.jpg" alt="Foto mr robot">';
 
-    // Click on selected cell
-    for (let i = 0; i < difficulty; i++) {
+    } else {
+        // Inject string in DOM
+        grid.innerHTML = createCell(difficulty);
 
-        const currentCell = cells[i];
+        // Create array with all cells
+        const cells = document.querySelectorAll('.cell');
 
-        currentCell.addEventListener('click', function () {
+        // Click on selected cell
+        for (let i = 0; i < difficulty; i++) {
 
-            selectedCell = currentCell.dataset.cell;
+            const currentCell = cells[i];
 
-            // Add class selected on cell
-            currentCell.classList.toggle('active');
+            currentCell.addEventListener('click', function () {
 
-            // Print selected cell number on console 
-            console.log(selectedCell);
+                selectedCell = currentCell.dataset.cell;
+
+                // Add class selected on cell
+                currentCell.classList.toggle('active');
+
+                // Print selected cell number on console 
+                console.log(selectedCell);
+            }
+            )
         }
-        )
+
+
     }
 })
-
-
-
