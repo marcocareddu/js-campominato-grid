@@ -7,7 +7,7 @@ console.log('JS OK')
 function createCell(numero) {
     let element = '';
     for (let i = 1; i <= numero; i++) {
-        element += `<div class="cell cell-${numero}" data-="${i}">${i}</div>`;
+        element += `<div class="cell cell-${numero}" data-cell="${i}">${i}</div>`;
     }
     return element;
 }
@@ -25,13 +25,28 @@ const button = document.querySelector('button');
 // Button click - Create Variables 
 button.addEventListener('click', function () {
     const difficulty = parseInt(selectElement.value);
+    let selectedCell = '';
     console.log(difficulty);
 
     // Inject string in DOM
     grid.innerHTML = createCell(difficulty);
-}
 
-)
+    // Create array with all cells
+    const cells = document.querySelectorAll('.cell');
+    console.log(cells);
+
+    // Click on selected cell
+    for (let i = 1; i < difficulty; i++) {
+
+        const currentCell = cells[i];
+
+        currentCell.addEventListener('click', function () {
+            selectedCell = currentCell.dataset.cell;
+            console.log(selectedCell)
+        }
+        )
+    }
+})
 
 
 
