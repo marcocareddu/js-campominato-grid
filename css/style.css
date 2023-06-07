@@ -31,27 +31,25 @@ main {
     width: 500px;
 }
 
-.cell-easy {
+.cell-100 {
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: 2px solid gold;
 }
 
-.cell-medium {
+.cell-81 {
     height: calc(100% / 9);
     width: calc(100% / 9);
     border: 2px solid gold;
 }
 
-.cell-hard {
+.cell-49 {
     height: calc(100% / 7);
     width: calc(100% / 7);
     border: 2px solid gold;
 }
 
-
-
-.cell .selected {
+.selected {
     background-color: lightskyblue;
 }
 
