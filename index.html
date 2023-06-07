@@ -29,14 +29,18 @@
             <img class="pe-2" src="./img/icon.png" alt="Logo boolean">
             <h1 class="fw-bold">Campo Minato</h1>
         </div>
-        <div>
-            <label for="difficulty">Difficoltà: </label>
-            <select name="difficulty" id="difficulty">
-                <option value="100">Easy</option>
-                <option value="81">Medium</option>
-                <option value="49">Hard</option>
-            </select>
-            <button class="btn-secondary">Play!</button>
+        <div class="d-flex justify-content-between align-items-center">
+            <label class="px-2" for="difficulty">Difficoltà: </label>
+            <div class="px-2">
+                <select class="form-select" name="difficulty" id="difficulty">
+                    <option value="100">Easy</option>
+                    <option value="81">Medium</option>
+                    <option value="49">Hard</option>
+                </select>
+            </div>
+            <div class="px-2">
+                <button class="btn btn-secondary">Play!</button>
+            </div>
         </div>
     </header>
 
